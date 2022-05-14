@@ -4,6 +4,31 @@
 
 [![](https://img.shields.io/badge/bilibili-%E5%A4%A7%E7%BE%BD-ff69b4)](https://space.bilibili.com/3410770?)
 
+# 目录
+[项目背景](#1)
+
+[程序介绍](#2)
+
+[安装和使用](#3)
+
+- [安装](#5)
+
+- [使用](#6)
+
+- [cmd.xls如何编写](#7)
+
+- [cmd.xls示范](#8)
+  
+[注意事项](#9)
+
+[Q&A](#10)
+
+[鸣谢](#11)
+
+&nbsp;
+
+<p id="1"></p>   
+
 # 项目背景
 2021-11-24 00:35 一位同事给我在微信中转了，B站UP主 [不高兴就喝水](https://space.bilibili.com/412704776 "不高兴就喝水") 的 [办公自动化视频](https://www.bilibili.com/video/BV1T34y1o73U? "5分钟，教你做个自动化软件拿来办公、刷副本、回微信 | 源码公开，开箱即用")
 
@@ -14,6 +39,9 @@
 经过一段时间的开发，此程序可以胜任一些简单的自动化操作了。
 
 &nbsp; 
+
+<p id="2"></p>  
+
 # 程序介绍
 
 本程序是一个自动化程序，与前辈“按键精灵”相比，用 excel 的 xls 文件来编写自动化程序在某些情况下效率会更高一些。
@@ -26,8 +54,12 @@
 
 &nbsp; 
 
+<p id="3"></p>
+
 # 安装和使用
-&nbsp; 
+
+<p id="5"></p>  
+
 ## 安装
 
 ### 本程序必须使用python 3.4 或以上版本，需要先安装和配置python环境。
@@ -37,10 +69,10 @@
 
 ### 安装配置完python后，需要继续安装以下依赖包才可以使用：
 >pip install pyperclip
-pip install xlrd
-pip install pyautogui==0.9.50 
-pip install opencv-python
-pip install pillow
+>pip install xlrd
+>pip install pyautogui==0.9.50 
+>pip install opencv-python
+>pip install pillow
 
 &nbsp; 
 注：如果在中国大陆下载特别慢的话可以在 install 后面，增加一个参数-i 国内镜像地址即可。
@@ -61,6 +93,9 @@ pip install pillow
 
 
 &nbsp; 
+
+<p id="6"></p> 
+
 ## 使用
 
  ### 本程序由两个文件组成：
@@ -77,6 +112,9 @@ pip install pillow
 
 
 &nbsp;
+
+<p id="7"></p> 
+
 ## cmd.xls如何编写
 **必须按照以下规范编写，否则可能会出现闪退现象。第一行不要删除，是标题行，自动化流程从第二行开始编写。**
 
@@ -144,6 +182,9 @@ pip install pillow
 >可以不填。为了方便后期维护，你可以选择在这里为这条自动化流程添加注释。
 
 &nbsp;
+
+<p id="8"></p> 
+
 ## cmd.xls示范
 <font color="#660000">**更多示范请参考实例文件夹里的cmd.xls
 示范可能会因为系统，软件，访问网站等诸多环境变量的不同而无法完全正常使用，仅作参考。**</font>
@@ -171,7 +212,7 @@ pip install pillow
 |6 | -200|   | 鼠标滚轮“向下”滚动200距离 |
 &nbsp;
 
-
+<p id="9"></p> 
 
 # 注意事项：
 使用exe执行文件 "大羽改良版.exe" 在退出程序时，不要直接用鼠标点击右上角的 "X" 进行关闭，需要输入命令 “0.退出程序”。
@@ -180,6 +221,8 @@ pip install pillow
 
 使用 "大羽改良版.py"则不会有以上问题。
 &nbsp;
+
+<p id="10"></p> 
 
 # Q&A：
 #### 问：有没有视频教程？
@@ -193,6 +236,8 @@ pip install pillow
 #### 问：流程在控制台中已经显示执行，但是并未执行？
 #### 答：可能是两条指令太快计算机没有反应过来。建议在两条流程之间增加一个5号命令，适度增加等待时间。
 
+
+<p id="11"></p> 
 
 # 鸣谢：
 排名部分先后
