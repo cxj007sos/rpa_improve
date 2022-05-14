@@ -69,13 +69,17 @@
 
 ### 安装配置完python后，需要继续安装以下依赖包才可以使用：
 >pip install pyperclip
+>
 >pip install xlrd
+>
 >pip install pyautogui==0.9.50 
+>
 >pip install opencv-python
+>
 >pip install pillow
 
 &nbsp; 
-注：如果在中国大陆下载特别慢的话可以在 install 后面，增加一个参数-i 国内镜像地址即可。
+如果在中国大陆下载特别慢的话可以在 install 后面，增加一个参数-i 国内镜像地址即可。
 > 举例：pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pyperclip
 
 |  其他国内镜像地址 |   |
