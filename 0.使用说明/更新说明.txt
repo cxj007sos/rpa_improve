@@ -1,3 +1,18 @@
+250505
+底层代码中pyautogui执行locateCenterOnScreen()方法会调用pyscreeze库
+0.1.29以上版的pyscreeze库找不到图像时抛出报错ImageNotFoundException，而不会返回None，导致程序闪退。
+
+pyautogui和opencv-python需要安装互相兼容的版本。
+否测运行pyautogui时会报错 _couldNotImportPyScreeze() got an unexpected keyword argument 'confidence'，导致执行鼠标事件闪退。
+
+经测试以下版本兼容性良好:
+pyautogui		0.9.54
+opencv-python	4.11.0.86
+pyscreeze		0.1.29
+
+基于以上内容修改了使用说明书，将这三个依赖的版本固定下来。
+
+————————————————————————————————————
 220427
 
 解决双击可以启动，但windows任务计划启动本脚本失败的问题。
